@@ -5,106 +5,172 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Política de Privacidad - Ahorcado Kings</title>
     <style>
-        /* Estilo Premium Felix Kings */
+        /* =========================================
+           ULTRA-PREMIUM DARK GOLD THEME
+           by FELIX KINGS - GAMING EXCELLENCE
+           ========================================= */
+
+        /* Importación de Fuentes Elegantes */
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Montserrat:wght@300;400;600&display=swap');
+
+        :root {
+            --bg-deep: #050505; /* Negro absoluto */
+            --bg-card: #0d0d0d; /* Negro sutil para contraste */
+            --gold-light: #f1e0ac; /* Dorado muy suave para texto */
+            --gold-main: #d4af37; /* Dorado metálico */
+            --gold-neon: rgba(212, 175, 55, 0.4); /* Resplandor dorado */
+            --text-main: #bfbfbf; /* Gris claro para lectura */
+            --text-dark: #666; /* Gris oscuro para footer */
+        }
+
+        /* Estilos Globales */
+        * { box-sizing: border-box; }
+
         body { 
-            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; 
-            line-height: 1.6; 
-            color: #e0e0e0; 
-            max-width: 850px; 
+            font-family: 'Montserrat', sans-serif; 
+            font-weight: 300;
+            line-height: 1.8; 
+            color: var(--text-main); 
+            max-width: 900px; 
             margin: 0 auto; 
-            padding: 30px 20px; 
-            background-color: #0a0a0a; /* Fondo más oscuro */
+            padding: 50px 25px; 
+            background-color: var(--bg-deep);
+            background-image: 
+                radial-gradient(circle at 50% 10%, rgba(212, 175, 55, 0.05) 0%, transparent 40%),
+                url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCIgdmlld0JveD0iMCAwIDQwIDQwIj48ZyBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNkNGFmMzciIGZpbGwtb3BhY2l0eT0iMC4wMyI+PHBhdGggZD0iTTAgMGg0MHY0MEgwVjB6bTIwIDIwaDIwdjIwSDIWMjB6TTAgMjBoMjB2MjBIMFYyMHoyMCAwaDIwdjIwSDIwVjB6Ii8+PC9nPjwvZz48L3N2Zz4='); /* Textura de lujo sutil */
         }
-        .container { 
-            background: #161616; 
-            padding: 40px; 
-            border-radius: 20px; 
-            border: 2px solid #d4af37; /* Borde dorado más marcado */
-            box-shadow: 0 10px 30px rgba(0,0,0,0.8), 0 0 15px rgba(212, 175, 55, 0.1); 
+
+        /* Contenedor Principal Premium */
+        .premium-container { 
+            background: var(--bg-card); 
+            padding: 60px; 
+            border-radius: 8px; /* Bordes más rectos, más modernos */
+            border: 1px solid var(--gold-main);
+            box-shadow: 
+                0 25px 50px -12px rgba(0,0,0,0.9),
+                0 0 20px var(--gold-neon); /* Resplandor dorado suave */
+            position: relative;
+            overflow: hidden;
         }
+
+        /* Título Principal de Lujo (Aesthetics) */
         h1 { 
-            color: #d4af37; 
+            font-family: 'Cinzel', serif; /* Fuente romana elegante */
+            color: var(--gold-main); 
             text-align: center; 
-            font-size: 2.2em;
+            font-size: 3em;
             text-transform: uppercase;
-            letter-spacing: 2px;
-            margin-bottom: 30px;
-            border-bottom: 1px solid #333;
-            padding-bottom: 20px;
+            letter-spacing: 5px;
+            margin-bottom: 50px;
+            margin-top: 0;
+            text-shadow: 0 0 10px var(--gold-neon);
+            border-bottom: 2px solid var(--gold-main);
+            padding-bottom: 25px;
+            position: relative;
         }
+
+        /* Subtítulos de Secciones */
         h2 { 
-            color: #d4af37; 
-            margin-top: 35px; 
-            font-size: 1.5em; 
+            font-family: 'Cinzel', serif;
+            color: var(--gold-main); 
+            margin-top: 45px; 
+            font-size: 1.6em; 
             display: flex;
             align-items: center;
+            letter-spacing: 2px;
+            text-shadow: 0 0 5px var(--gold-neon);
         }
+
+        /* Icono decorativo premium antes del H2 */
         h2::before {
-            content: "◈";
-            margin-right: 10px;
-            font-size: 0.8em;
+            content: "👑";
+            margin-right: 15px;
+            font-size: 0.9em;
+            opacity: 0.8;
         }
-        p { margin-bottom: 18px; font-size: 1.05em; color: #cccccc; }
-        ul { margin-bottom: 20px; padding-left: 20px; }
-        li { margin-bottom: 10px; color: #cccccc; }
-        strong { color: #ffffff; }
+
+        /* Texto de Párrafos y Listas */
+        p { margin-bottom: 22px; font-size: 1.1em; color: var(--text-main); }
+        ul { margin-bottom: 25px; padding-left: 20px; list-style-type: none; }
+        
+        /* Viñeta Premium de Lista */
+        li { margin-bottom: 15px; color: var(--text-main); font-size: 1.05em; display: flex; align-items: start; }
+        li::before {
+            content: "✦";
+            color: var(--gold-main);
+            margin-right: 15px;
+            font-size: 1em;
+            line-height: 1.8;
+        }
+
+        strong { color: var(--gold-light); font-weight: 600; }
         
         /* Estilo para resaltar la actualización */
         .update-date {
             text-align: center;
-            font-size: 0.9em;
-            color: #888;
-            margin-bottom: 30px;
+            font-size: 1em;
+            color: var(--text-dark);
+            margin-bottom: 40px;
+            font-style: italic;
+            border-top: 1px solid rgba(255,255,255,0.05);
+            padding-top: 10px;
         }
 
-        .footer { 
-            margin-top: 50px; 
-            font-size: 0.9em; 
-            color: #d4af37; 
+        /* Footer de Autor de Lujo */
+        .premium-footer { 
+            margin-top: 60px; 
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1em; 
+            color: var(--gold-main); 
             text-align: center; 
-            border-top: 1px solid #333; 
-            padding-top: 25px;
-            letter-spacing: 1px;
+            border-top: 1px solid rgba(212, 175, 55, 0.2); 
+            padding-top: 35px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            font-weight: 600;
         }
         
-        /* Optimización para móviles */
-        @media (max-width: 600px) {
-            .container { padding: 20px; }
-            h1 { font-size: 1.6em; }
+        /* Optimización para dispositivos móviles */
+        @media (max-width: 768px) {
+            body { padding: 30px 15px; }
+            .premium-container { padding: 30px; }
+            h1 { font-size: 1.8em; letter-spacing: 3px; }
+            h2 { font-size: 1.3em; }
+            p, li { font-size: 1em; }
         }
     </style>
 </head>
 <body>
-    <div class="container">
+    <div class="premium-container">
         <h1>Política de Privacidad</h1>
         <div class="update-date"><strong>Última actualización:</strong> 12 de marzo de 2026</div>
 
-        <p>En <strong>Ahorcado Kings</strong>, valoramos la privacidad de nuestros jugadores. Esta política describe cómo se gestiona la información dentro de nuestra aplicación móvil para garantizar una experiencia segura y transparente.</p>
+        <p>En <strong>Ahorcado Kings</strong>, valoramos la privacidad de nuestros jugadores por encima de todo. Esta política describe cómo se gestiona la información dentro de nuestra aplicación móvil, garantizando total transparencia y seguridad.</p>
 
         <h2>1. Información y Recopilación</h2>
-        <p>Ahorcado Kings es una aplicación diseñada para el entretenimiento que no requiere el registro de cuentas personales ni solicita datos como nombres, correos electrónicos o números de teléfono para su funcionamiento básico. Sin embargo, para ofrecer una experiencia completa, utilizamos servicios de terceros.</p>
+        <p>Ahorcado Kings está diseñado como un Servicio Premium que no requiere el registro de cuentas personales ni solicita datos sensibles como nombres, correos electrónicos o números de teléfono para su funcionamiento principal.</p>
 
         <h2>2. Publicidad (Google AdMob)</h2>
-        <p>Esta aplicación utiliza el servicio de <strong>Google AdMob</strong> para mostrar anuncios. AdMob puede recopilar y utilizar datos técnicos como el ID de publicidad de su dispositivo (AD-ID) para personalizar los anuncios, limitar la frecuencia de los mismos y analizar su rendimiento de forma anónima.</p>
+        <p>Esta aplicación utiliza el servicio de <strong>Google AdMob</strong> para mostrar anuncios de alta calidad. AdMob puede recopilar y utilizar datos técnicos anónimos como el ID de publicidad de su dispositivo (AD-ID) para personalizar los anuncios y analizar su rendimiento.</p>
 
         <h2>3. Compras Integradas (Google Play Billing)</h2>
-        <p>Ofrecemos la posibilidad de adquirir paquetes de monedas virtuales para mejorar la experiencia de juego. Todas las transacciones se realizan a través de los sistemas seguros de <strong>Google Play Store</strong>. Nosotros NO tenemos acceso ni almacenamos sus datos bancarios, números de tarjeta o información de facturación.</p>
+        <p>Ofrecemos la posibilidad de adquirir paquetes exclusivos de monedas virtuales. Todas las transacciones se realizan a través de los sistemas seguros de <strong>Google Play Store</strong>. Nosotros NO tenemos acceso ni almacenamos su información bancaria o de facturación.</p>
 
         <h2>4. Almacenamiento de Datos</h2>
-        <p>El progreso del juego, incluyendo el saldo de monedas, récords y configuraciones personalizadas, se almacena localmente en su dispositivo móvil. Esta información no se comparte con servidores externos administrados por nosotros.</p>
+        <p>El progreso del juego, saldo de monedas y récords personales se almacenan localmente en su dispositivo móvil. Esta información no se comparte con servidores externos administrados por nosotros.</p>
 
         <h2>5. Proveedores de Servicios</h2>
-        <p>Podemos emplear a terceras empresas para:</p>
+        <p>Podemos emplear a terceras empresas por las siguientes razones:</p>
         <ul>
             <li>Facilitar nuestro Servicio y soporte técnico.</li>
             <li>Proporcionar el Servicio en nuestro nombre (como el procesamiento de pagos).</li>
-            <li>Analizar de forma agregada cómo se utiliza nuestro Servicio para mejorar futuras actualizaciones.</li>
+            <li>Analizar el uso del Servicio de forma agregada para futuras actualizaciones de lujo.</li>
         </ul>
 
         <h2>6. Contacto</h2>
-        <p>Si tiene cualquier duda o sugerencia sobre nuestra Política de Privacidad, puede contactarnos directamente a través de los canales de soporte proporcionados en la ficha técnica de Google Play Store.</p>
+        <p>Para cualquier duda o sugerencia sobre nuestra Política de Privacidad, puede contactarnos a través de los canales de soporte oficial en la ficha técnica de Google Play Store.</p>
 
-        <div class="footer">
+        <div class="premium-footer">
             <p>&copy; 2026 FELIX KINGS - EXCELLENCE IN GAMING</p>
         </div>
     </div>
